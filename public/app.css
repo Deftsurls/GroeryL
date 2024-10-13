@@ -1,0 +1,14 @@
+.row-cols-4 > .col {
+    margin-bottom: 0.1rem;
+    border-bottom: 4px solid goldenrod;
+    border-left: 4px solid goldenrod;
+    border-right: 4px solid goldenrod;
+    border-top: 4px solid goldenrod;
+  }
+.total-price {
+    font-size: 1.5rem;
+    color: #333;
+    border-bottom: 3px solid lightsalmon;
+    padding-bottom: 10px;
+    margin-left: 9px;
+  }
