@@ -7,7 +7,7 @@ const Groceries = require('./models/list')
 const dotenv = require('dotenv').config()
 
 
-mongoose.connect(process.env.MONGO, { useNewUrlParser: true, useUnifiedTopology: true })
+mongoose.connect(process.env.MONGO)
     .then(() =>{
         console.log('Connected to MongoDB');
     })
