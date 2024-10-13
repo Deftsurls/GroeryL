@@ -1,7 +1,7 @@
 const express = require('express')
 const path = require('path')
 const methodOverride = require ('method-override')
-const port = 10000;
+const port = 8080;
 const mongoose = require('mongoose')
 const Groceries = require('./models/list')
 
@@ -25,7 +25,7 @@ app.use(methodOverride('_method'))
 
 const units = ['KG', 'LB', 'GR', '1 Caja X 32 ', 'Unidad', 'Arroba', 'L', '1 Caja']
 
-app.get('/home', (req, res) =>{
+app.get('/', (req, res) =>{
     res.render('home.ejs')
 })
 
