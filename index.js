@@ -4,12 +4,10 @@ const methodOverride = require ('method-override')
 const port = 8080;
 const mongoose = require('mongoose')
 const Groceries = require('./models/list')
-const dotenv = require('dotenv')
-dotenv.config();
-const db = process.env.MONGO;
+const dotenv = require('dotenv').config()
 
 
-mongoose.connect(db, { useNewUrlParser: true, useUnifiedTopology: true })
+mongoose.connect(process.env.MONGO, { useNewUrlParser: true, useUnifiedTopology: true })
     .then(() =>{
         console.log('Connected to MongoDB');
     })
