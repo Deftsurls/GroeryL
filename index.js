@@ -1,7 +1,7 @@
 const express = require('express')
 const path = require('path')
 const methodOverride = require ('method-override')
-const port = 3000;
+const port = 10000;
 const mongoose = require('mongoose')
 const Groceries = require('./models/list')
 
