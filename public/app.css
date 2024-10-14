@@ -13,3 +13,12 @@
     margin-left: 9px;
   }
 
+.overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(192, 186, 186, 0.579); /* adjust the opacity value */
+  z-index: -1; /* make sure it's behind the content */
+}
